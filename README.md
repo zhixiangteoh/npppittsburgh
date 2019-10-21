@@ -1,4 +1,4 @@
-# Northside Partnership Project front-end website built using Node.js, Express, and Pug.
+# Northside Partnership Project
 
 This is a simple website built using Node.js, Express and Pug.
 
