@@ -1,0 +1,35 @@
+html
+    head
+        title #{title}
+        link(rel='stylesheet', href='/css/style.css')
+        link(rel='stylesheet', href='/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/css/font-awesome.min.css')
+        link(rel='stylesheet', href='/css/animate.min.css')
+        meta(charset='utf-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+    
+    body
+        nav.container.navbar.fixed-top.navbar-expand-sm.navbar-dark.bg-blue6
+            div.container
+                button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+
+                div.collapse.navbar-collapse(id='navbarSupportedContent')
+                    ul.navbar-nav.justify-content-center.d-flex.flex-fill
+                        block nav
+                        
+        block body
+
+        div.container.bg-blue6(id='footer')
+            div.p-4.text-center.text-white
+                h1
+                    span.text-link
+                    a(href='http://www.ioby.org/project/npp-restoration', target="_blank")
+                        button.btn-warning.btn-huge(style='font-weight:bold; color:#f1f8fe;')
+                            |   Donate
+                            br
+                            img(src='images/donate-here.png', style='width:150px;')
+                            
+
+            div.p-2.mb-0.text-white.text-center(id='copyright')
+                h8 &copy; Northside Partnership Project Pittsburgh 2019

@@ -1,0 +1,54 @@
+extends default
+
+block nav
+  li.nav-item
+      a.nav-link(href='/') HOME 
+  li.nav-item.active
+      a.nav-link(href='/about') ABOUT
+      span.sr-only (current)
+  li.nav-item
+      a.nav-link(href='/project') PROJECT
+  li.nav-item
+      a.nav-link(href='/contact') CONTACT
+  li.nav-item
+      a.nav-link(href='http://www.ioby.org/project/npp-restoration', target='_blank') GIVE
+
+block body
+  div.container.text-center.bg-orange0
+    img.mb-4(src='images/npp-logo2.png', style='width:250px; margin-top:90px;')
+
+  div.container.bg-orange1.pb-2
+    div.row.mb-4.pt-2
+        div.col-lg-8
+            h1.m-4(style='color:#222933;') Mission Statement
+            div.container.text-justify.ml-3
+                h4(style='color:#222933;') We are a North Side-based partnership of groups and organizations. We are committed to empowering families and neighborhoods by providing coordinated and comprehensive services while developing community structures for operation.
+        div.col-lg-4.text-center
+            img.m-4(src='images/mission.png', style='height:100%;')
+
+    div.row.mt-4.pb-4
+        div.col-lg-8
+            h1.m-4(style='color:#222933;') Vision
+            div.container.text-justify.ml-3
+                h4(style='color:#222933;') The goal of North Side Partnership Project is to leverage the strengths of our families and neighborhoods to accomplish the following:
+                    br
+                    br 
+                    div.container
+                        h5
+                            |   Build economically stable, strong and sustainable neighborhoods
+                            br
+                            br
+                            |   Create a safe and productive environment for families
+                            br
+                            br
+                            |   Substantially increase academic performance and cultural awareness
+        div.col-lg-4.text-center
+            img.m-4.pt-4(src='images/company-vision.png', style='width:70%;')
+
+    div.container.bg-orange2.bio.mt-5.mb-1
+        div.text-center.bio-box
+            img.img-fluid(src='images/eleanor_williams_npp.jpg')
+            div.bio-body
+                h2 Eleanor Williams
+                h5.text-justify As a reverend, teacher, community organizer and poet, Eleanor Williams is a woman of many talents. She joined 90.5 WESA’s The Confluence to talk about her work and her latest endeavor with the North Side Partnership Project, a coalition of seven nonprofits.
+                a.btn.btn-success.btn-lg(href='https://www.wesa.fm/post/north-side-partnership-project-hopes-offer-community-resources-former-perry-south-school#stream/0', target='_blank') Read more

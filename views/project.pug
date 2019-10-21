@@ -1,0 +1,54 @@
+extends default
+
+block nav
+  li.nav-item
+      a.nav-link(href='/') HOME 
+  li.nav-item
+      a.nav-link(href='/about') ABOUT
+  li.nav-item.active
+      a.nav-link(href='/project') PROJECT
+      span.sr-only (current)
+  li.nav-item
+      a.nav-link(href='/contact') CONTACT
+  li.nav-item
+      a.nav-link(href='http://www.ioby.org/project/npp-restoration', target='_blank') GIVE
+
+block body
+  div.container.text-center.bg-pink0
+    img.mb-4(src='images/npp-logo2.png', style='width:250px; margin-top:90px;')
+
+  div.container.text-center.bg-pink1.pb-2
+    img.m-4(src='images/jumbotron.png', style='width:90%; border-radius:2%;')
+    div.row.mb-4.pt-2
+        div.col-lg-7.text-left
+            h1.m-4(style='color:#f6e2a7; font-weight:bold;') History and intent of the former McNaugher School
+            div.container.text-justify
+                h4(style='color:#fcf3da;') McNaugher School sits in the Perry Hilltop (Perry South) Community on the North Side of Pittsburgh.  It has 103 years of educational service in the community. McNaugher is 1.81 acres, 58,909 Square Feet with 4 floors including the basement. There is one elevator; it also has a playground and on the street parking.
+                br
+                h4(style='color:#fcf3da;') Education was the purpose of this community facility. It started out as an elementary school in 1910, then later a middle school and before it closed in 2012 it was an alternative school for students with functional and behavioral concerns.
+                br
+                h4(style='color:#fcf3da;') North Side Partnership Project (NPP) is planning to keep the theme of education and community needs in the forefront of the new innovative use of the building. North Side Partnership is an organization made up of seven grassroots organizations that have collaborated to organize and advocate for the community to improve behaviors: by designing and implementing programs that meet the needs of communities while improving school and employment relations.  It will be called North Side Partnership Community Resource Mall to address organization, advocacy, service delivery and development for the Pittsburgh and surrounding areas but particularly to the seven communities that surround the Resource Mall. (Perry South, Perry North, Fineview, Charles Street, North View Heights, Spring Hill, Marshall Shadeland).
+                br
+                h4(style='color:#fcf3da;') NPP is planning to implement the STEAM model (Science, Technology, Engineering, Arts, and Math) in labs that will generate leadership, while generating social capital and public accountability to the lives of families.
+                br
+                h4(style='color:#fcf3da;') The plan is also to have commercial tenants that would benefit from the location as well as an opportunity to serve within the community such as a mini police station and medical services.
+                br
+                a(href='https://www.theincline.com/2018/04/19/in-perry-south-transforming-a-vacant-school-into-a-community-resource-center/', target='_blank')
+                    button.btn-lg.btn-danger(style='color:#fcf3da;')
+                        h4 Read our article in The Incline
+
+        div.col-lg-5
+            div.container.bg-pink2.mt-4.p-2(style='width:90%;')
+                each community in communities
+                    div.community.m-2.mb-4
+                        div.container.bg-orange1
+                            h4 #{community.name}
+                            br
+                            h6 Population: 
+                                span(style='color:#cb4039;') #{community.population}
+                            h6 % African American: 
+                                span(style='color:#cb4039;') #{community.africanamerican}
+                            h6 Household Total: 
+                                span(style='color:#cb4039;') #{community.householdtotal}
+                            h6 Single Mother Head of Household: 
+                                span(style='color:#cb4039;') #{community.singlemotherhead}

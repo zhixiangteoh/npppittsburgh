@@ -1,0 +1,68 @@
+extends default
+
+block nav
+  li.nav-item
+      a.nav-link(href='/') HOME 
+  li.nav-item
+      a.nav-link(href='/about') ABOUT
+  li.nav-item
+      a.nav-link(href='/project') PROJECT
+  li.nav-item.active
+      a.nav-link(href='/contact') CONTACT
+      span.sr-only (current)
+  li.nav-item
+      a.nav-link(href='http://www.ioby.org/project/npp-restoration', target='_blank') GIVE
+
+block body
+  div.container.text-center.bg-greenlighter0.mb-0(style='padding-top:80px;')
+    section.pl-2.pr-2.pb-4
+        h2.h1-responsive.font-weight-bold.text-center.my-4 CONTACT US
+        p.text-center.w-responsive.mx-auto.mb-5 Do you have any questions? Please do not hesitate to contact us directly.
+
+        div.row
+            div.col-md-8.mb-md-0.mb-5
+                form#contact-form(name='contact-form', action='mail.php', method='POST')
+                    div.row
+                        div.col-md-6
+                            div.md-form.mb-0
+                                input.form-control(id='name', type='text', name='name')
+                                label(for='name') Your name
+
+                        div.col-md-6
+                            div.md-form.mb-0
+                                input.form-control(id='email', type='text', name='email')
+                                label(for='email') Your email
+                    
+                    div.row
+                        div.col-md-12
+                            div.md-form.mb-0
+                                input.form-control(id='subject', type='text', name='subject')
+                                label(for='subject') Subject
+                    
+                    div.row
+                        div.col-md-12
+                            div.md-form
+                                textarea.form-control.md-textarea(id='message', type='text', name='message', rows='2')
+                                label(for='message') Your message
+                
+            div.col-md-4.text-center
+                    ul.list-unstyled.mb-0
+                        li
+                            i.fa.fa-map-marker.fa-2x
+                            p 2610 Maple St, Pittsburgh, PA 15214
+                        li
+                            i.fa.fa-phone.mt-4.fa-2x
+                            p (01) 412 969 2661
+                        li
+                            i.fa.fa-envelope.mt-4.fa-2x
+                            p northsidepartnershipproject@gmail.com
+        div.row
+            div.col-md-8.mb-4
+                div.text-center.text-light
+                    //- a.btn.btn-primary(onclick='document.getElementById('contact-form').submit();') Send
+                    a.btn.btn-primary.pr-5.pl-5(onclick='validateForm()') Send
+                div.status
+
+  div.container.text-center(style='background-image: url(images/NPP-health-fair-picture2.png); background-size:cover; height:90vh;')
+    img(src='images/npp-logo.png', style='width:450px; margin-top:50px;')
+    h2.m-4(style='color:#222933;') Empowering families and neighborhoods

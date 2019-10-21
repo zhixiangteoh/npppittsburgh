@@ -1,0 +1,398 @@
+/* Global */
+a:hover {
+  text-decoration:none;
+}
+
+.nav_container {
+  margin-top:20px;
+  margin-bottom:10px;
+}
+
+#disabled{
+  color:#b0b0b0;
+}
+
+.image_fixed {
+  background-attachment:fixed;
+}
+
+.bg-translucentBlack {
+  background-color:#000000;
+  opacity:0.5;
+}
+
+.bg-translucentWhite {
+  background-color:#ffffff;
+  opacity:0.5;
+  padding:10px;
+
+}
+
+/* blue palette */
+.bg-blue0 {
+  background-color:#f1f8fe;
+}
+
+.bg-blue1 {
+  background-color:#b2d3f2;
+}
+
+.bg-blue2 {
+  background-color:#70a1d3;
+}
+
+.bg-blue3 {
+  background-color:#4682c3;
+}
+
+.bg-blue4 {
+  background-color:#35689d;
+}
+
+.bg-blue5 {
+  background-color:#26496e;
+}
+
+.bg-blue6 {
+  background-color:#263d52;
+}
+
+/* dark palette */
+.bg-dark0 {
+  background-color:#f8f9fa;
+}
+
+.bg-dark1 {
+  background-color:#e2e7eb;
+}
+
+.bg-dark2 {
+  background-color:#d0d6dd;
+}
+
+.bg-dark3 {
+  background-color:#bac4cd;
+}
+
+.bg-dark4 {
+  background-color:#8a95a5;
+}
+
+.bg-dark5 {
+  background-color:#616b79;
+}
+
+.bg-dark6 {
+  background-color:#222933;
+}
+
+/* accents */
+/* green lighter - darker green */
+.bg-greenlighter0 {
+  background-color:#e9fbfb;
+}
+
+.bg-greenlighter1 {
+  background-color:#b7ecea;
+}
+
+.bg-greenlighter2 {
+  background-color:#88d5d2;
+}
+
+.bg-greenlighter3 {
+  background-color:#5daca3;
+}
+
+.bg-greenlighter4 {
+  background-color:#4a8f87;
+}
+
+.bg-greenlighter5 {
+  background-color:#32635e;
+}
+
+.bg-greenlighter6 {
+  background-color:#214443;
+}
+
+/* green light - dark green */
+.bg-greenlight0 {
+  background-color:#e8fbed;
+}
+
+.bg-greenlight1 {
+  background-color:#b7ebc4;
+}
+
+.bg-greenlight2 {
+  background-color:#8dd6a4;
+}
+
+.bg-greenlight3 {
+  background-color:#64bd79;
+}
+
+.bg-greenlight4 {
+  background-color:#4d9a5f;
+}
+
+.bg-greenlight5 {
+  background-color:#397546;
+}
+
+.bg-greenlight6 {
+  background-color:#27503b;
+}
+
+/* orange - brown */
+.bg-orange0 {
+  background-color:#fffcf5;
+}
+
+.bg-orange1 {
+  background-color:#fcf3da;
+}
+
+.bg-orange2 {
+  background-color:#f6e2a7;
+}
+
+.bg-orange3 {
+  background-color:#eeca74;
+}
+
+.bg-orange4 {
+  background-color:#c5a550;
+}
+
+.bg-orange5 {
+  background-color:#886d2f;
+}
+
+.bg-orange6 {
+  background-color:#59481d;
+}
+
+/* pink - red */
+.bg-pink0 {
+  background-color:#f9e9e8;
+}
+
+.bg-pink1 {
+  background-color:#eaadac;
+}
+
+.bg-pink2 {
+  background-color:#d56b68;
+}
+
+.bg-pink3 {
+  background-color:#cb4039;
+}
+
+.bg-pink4 {
+  background-color:#aa3029;
+}
+
+.bg-pink5 {
+  background-color:#7e2521;
+}
+
+.bg-pink6 {
+  background-color:#591d1b;
+}
+
+/* Carousel */
+.carousel-item {
+  height:700px;
+}
+
+.carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-height: 800px;
+  width: auto;
+}
+
+.roundedBox {
+  width:100%;
+  object-fit:cover;
+  height:400px;
+  border-radius: 10%;
+}
+
+.roundedRectangle {
+  width:100%;
+  object-fit:cover;
+  height:350px;
+  border-radius: 10%;
+}
+
+.overlay-white {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  opacity: 0;
+  border-radius:10%;
+  transition: .5s ease;
+  background-color: #ffffff;
+}
+
+/* Teoh */
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+/* Collage */
+#collage {
+  padding-top:20px;
+}
+/* Index */
+
+/* Short Intro */
+
+/* top-post */
+/* #top-post {
+  background-image:url(../img/chameleon.jpg);
+  background-size:cover;
+  width:100%;
+  height:100vh;
+} */
+
+/* blog icons */
+.a-block {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  padding: 30px;
+  position: relative;
+  margin-bottom: 30px;
+  height: 300px;
+}
+
+.a-block.height-lg {
+  height: 600px;
+}
+
+.a-block.height-md {
+  height: 400px;
+}
+
+#top-post .text-middle {
+  padding-top:30%;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.text-middle {
+  padding-top:40%;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.overlay {
+  position:absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+
+#top-post:hover .overlay, #icon1:hover .overlay, #icon2:hover .overlay, #icon3:hover .overlay {
+  opacity: 0.6;
+}
+
+/* Bio */
+.bio {
+  padding: 15px;
+  border: 1px solid #0e0e0e;
+  font-weight: 400;
+}
+
+.bio img {
+  width:40%;
+  margin-top: -4em;
+  border-radius: 15%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.bio-body {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.bio-body .social a {
+  color: #000;
+}
+
+/* Footer */
+.box img{
+  margin-top:30px;
+  width:80px;
+}
+
+#socials {
+  width:60%;
+}
+
+#socials-icons {
+  width:40%;
+}
+
+#copyright {
+  border-style:solid;
+  border-width:1px 0 0 0;
+}
+
+.page-link-button img {
+  height:60vh; 
+  width:100%;
+}
+
+.page-link-button button {
+  color:#f9e9e8;
+  font-weight:bold;
+}
+
+.btn-huge {
+  width:200px;
+  border-radius:1%;
+}
+
+/* .community {
+  border-style:solid;
+  border-width:1px;
+  border-color:#59481d;
+} */

@@ -1,0 +1,35 @@
+extends default
+
+block nav
+  li.nav-item.active
+      a.nav-link(href='/') HOME 
+      span.sr-only (current)
+  li.nav-item
+      a.nav-link(href='/about') ABOUT
+  li.nav-item
+      a.nav-link(href='/project') PROJECT
+  li.nav-item
+      a.nav-link(href='/contact') CONTACT
+  li.nav-item
+      a.nav-link(href='http://www.ioby.org/project/npp-restoration', target='_blank') GIVE
+
+block body
+  div.container.text-center(style='background-image: url(images/NPP-health-fair-picture2.png); background-size:cover; height:100vh;')
+    img(src='images/npp-logo.png', style='width:450px; margin-top:100px;')
+    h2.m-4(style='color:#222933;') Empowering families and neighborhoods
+  
+  div.container.text-center.bg-blue0
+    h4.text-justify.p-5.mb-0 We are a North Side based partnership of groups and organizations. We are committed to empowering families and neighborhoods by providing coordinated and comprehensive services while developing community structures for operation. 
+
+  div.container.text-center.bg-blue1
+    div.row.page-link-button
+      div.col-lg-6(id='about-button')
+        div.container
+          img.p-3.roundedBox(src='images/eleanor_williams_npp.jpg')
+          a(href='/about')
+            button.mb-4.btn-success.btn-lg LEARN ABOUT US
+      div.col-lg-6(id='project-button')
+        div.container
+          img.p-3.roundedBox(src='images/jumbotron.png')
+          a(href='/project')
+            button.mb-4.btn-success.btn-lg ABOUT THE PROJECT

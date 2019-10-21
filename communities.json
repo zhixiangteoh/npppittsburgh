@@ -1,0 +1,73 @@
+{
+  "profiles": [
+    {
+      "name": "Perry South",
+      "population": "5,244",
+      "africanamerican": "63%", 
+      "householdtotal": "2,083",
+      "singlemotherhead": "17.43%",
+      "imgSrc": "tom-jagger.jpg",
+      "id": "perrysouth"
+    },
+
+    {
+      "name": "Perry Hilltop / Observatory Hill / Perry North",
+      "population": "4,630",
+      "africanamerican": "22%", 
+      "householdtotal": "1,840",
+      "singlemotherhead": "8.32%",
+      "imgSrc": "tom-jagger.jpg",
+      "id": "perryhilltop"
+    },
+
+    {
+      "name": "Northview Heights",
+      "population": "2,565",
+      "africanamerican": "96%", 
+      "householdtotal": "786",
+      "singlemotherhead": "68%",
+      "imgSrc": "tom-jagger.jpg",
+      "id": "northviewheights"
+    },
+
+    {
+      "name": "Marshall / Shadeland",
+      "population": "6,822",
+      "africanamerican": "30%", 
+      "householdtotal": "2,078",
+      "singlemotherhead": "10.49%",
+      "imgSrc": "tom-jagger.jpg",
+      "id": "marshallshadeland"
+    },
+
+    {
+      "name": "Fineview",
+      "population": "1,825",
+      "africanamerican": "46%", 
+      "householdtotal": "799",
+      "singlemotherhead": "21.9%",
+      "imgSrc": "tom-jagger.jpg",
+      "id": "fineview"
+    },
+
+    {
+      "name": "Charles Street",
+      "population": "1,036",
+      "africanamerican": "96%", 
+      "householdtotal": "400",
+      "singlemotherhead": "20%",
+      "imgSrc": "tom-jagger.jpg",
+      "id": "charlesstreet"
+    },
+
+    {
+      "name": "Spring Hill",
+      "population": "3,040",
+      "africanamerican": "22%", 
+      "householdtotal": "1,274",
+      "singlemotherhead": "20.09%",
+      "imgSrc": "tom-jagger.jpg",
+      "id": "springhill"
+    }
+  ]
+}
